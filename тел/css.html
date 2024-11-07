@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практические задания</title>
+    <style>
+        .toggle-content {
+            transition: max-height 0.3s ease-out;
+            overflow: hidden;
+            max-height: 0;
+            padding: 0 10px;
+        }
+        .toggle-content.open {
+            padding: 10px; /* Добавить отступ при открытии */
+        }
+        .prakt {
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        .arrow.open {
+            transform: rotate(90deg); /* Поворот стрелки */
+        }
+    </style>
+</head>
+<body>
+
+<div id="blocksContainer">
+    <div class="prakt">
+        <div class="arrow" data-index="0">➡️</div>
+        <div>Введение в PHP</div>
+    </div>
+    <div class="toggle-content" data-index="0">
+        <p>Здесь будет текст о введении в PHP.</p>
+    </div>
+
+    <div class="prakt">
+        <div class="arrow" data-index="1">➡️</div>
+        <div>Название 2</div>
+    </div>
+    <div class="toggle-content" data-index="1">
+        <p>Ваш текст в блоке 2.</p>
+    </div>
+</div>
+
+<script>
+    const arrows = document.querySelectorAll('.arrow');
+    const toggleContents = document.querySelectorAll('.toggle-content');
+
+    arrows.forEach(arrow => {
+        arrow.addEventListener('click', () => {
+            const index = arrow.getAttribute('data-index');
+            const currentContent = document.querySelector(.toggle-content[data-index="${index}"]);
+            const isOpen = currentContent.classList.toggle('open');
+            arrow.classList.toggle('open');
+
+            // Закрываем все остальные блоки
+            if (isOpen) {
+                toggleContents.forEach(content => {
+                    if (content !== currentContent) {
+                        content.classList.remove('open');
+                        content.style.maxHeight = '0';
+                        content.style.padding = '0 10px'; 
+                        const correspondingArrow = document.querySelector(.arrow[data-index="${content.getAttribute('data-index')}"]);
+                        correspondingArrow.classList.remove('open');
+                    }
+                });
+                // Устанавливаем max-height для текущего блока
+                currentContent.style.maxHeight = currentContent.scrollHeight + 'px';
+            } else {
+                currentContent.style.maxHeight = '0';
+                currentContent.style.padding = '0 10px'; 
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
