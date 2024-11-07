@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+margin: 0;
+padding: 0;
+}
+body{
+
+    overflow-x: hidden;
+    font-family: "Finlandica", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-family: Montserrat;
+    background-color: black; 
+}
+
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.cap{ 
+    width: 101%;
+    height: 60px;
+    background-color: black;
+    margin-left: -10px;
+    margin-top: -18px;
+    box-shadow: 0 -15px 30px 10px rgba(0, 0, 0, .5);    
+
+
+}
+
+
+.logo{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    font-weight: bold;
+    margin-left:8.5% ;
+
+    font-family: "Finlandica", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+
+
+.content{
+    padding-top: 25px;
+    width: 70%;
+    height: 35px;
+    margin-left: 15%;
+    margin-top: -15px;
+    text-align: center;
+
+
+}
+
+.mainBtn{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+    margin-right: 25px;
+    color: white;
+    transition-duration: 0.4s;
+    font-size: 14px;
+
+
+}    
+
+.mainBtn:hover{
+    color: rgb(232, 73, 33);
+    opacity: 0.4s;
+}
+
+.mainBtn1{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 25px;
+
+
+    color: White;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+
+.cont{
+    position: absolute;
+    width: 790px;
+    background-color: white;
+    border-radius: 12px;
+    left: 30%;
+    text-align: center;
+}
+
+.cont1{
+    font-size: 36px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
