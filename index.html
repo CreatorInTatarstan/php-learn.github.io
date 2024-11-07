@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP-learn</title>
+    <link rel="stylesheet" href="php.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="cap">
+                <div class="logo"><font color="orange" ><\> Code</font>School</div>
+                <div class="content">
+                    <a class="mainBtn1" href="index.html">Главная</a>
+                    <a class="mainBtn" href="лабораторная работа/laby.html">Лабораторные работы</a>
+                    <a class="mainBtn" href="поддержка/pod.html">Поддержка</a>
+                    <a class="mainBtn" href="контакты/contacts.html">О нас</a>
+                </div>
+            </div>
+    </header>
+            
+            <div class="vstuplenie">
+                <br>
+                <div class="text">Изучение PHP всегда начинается с малого</div>
+                <div class="text1">Обучитесь PHP, чтобы найти работу своей мечты</div>
+                <a href="#bottom"><div class="btn">перейти к обучению</div></a>
+                <img class="imgForVstup2" src="main_bg.webp" alt="">
+                <img class="imgForVstup" src="main_img.webp" alt="">
+            </div>
+
+            <div class="osnova">
+                <br><br>
+                <div class="prof">
+                    <br>
+                    <div class="textProf">О профессии</div>
+                    <br>
+                    <div class="flexProfProf">
+                    
+                    <div class="textProf1">PHP входит в десятку самых популярных языков программирования в рейтинге TIOBE. На нём написано большинство CMS, в том числе и WordPress, на котором работает 65% всех сайтов в мире. PHP под капотом у Wikipedia, ВКонтакте и YouTube. Разработчики развивают язык уже более 25 лет и внедряют новые возможности с каждой версией.
+<br><br>
+                        Чтобы поддерживать работу старых проектов и писать веб-приложения с нуля, компании нанимают программистов на PHP.</div>
+                        <img class="imgProf" src="https://cdn.skillbox.pro/landgen/blocks/start-screen/153032/md/104cc4d8-59e3-4091-9060-e93793a9117b-2x.webp" alt="">
+                    </div>
+                </div>
+                <br><br>
+                <div class="flexProf">
+                    <div class="chst1">
+                        <div class="cyf"><b>200 компаний
+                        </b></div>
+                        <div class="cyfText">    ищут junior-PHP-разработчиков</div>
+                    </div>
+                    <div class="chst2">
+                        <div class="cyf"><b>60 000 рублей</b></div>
+                        <div class="cyfText">средняя зарплата начинающего PHP-разработчика, по данным hh.ru
+                            <br>
+                        
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="imgText">
+                    <div class="textImg">
+                        <div class="textZag">
+                            В любое время и в любом месте.
+                        </div>
+                        <br><br>
+                        <div class="posle">
+                            Учитесь без отрыва от работы. Выделяйте на учебу столько времени, сколько имеете прямо сейчас, — 15 минут или 2 часа.
+                        </div>
+                    </div>
+                    <img class="imgImg" src="php1.jpeg" alt="">
+                </div>
+                
+                <div class="imgText">
+                    
+                    
+                        <img class="imgImg" src="php2.jpeg" alt="">
+                        <div class="textImg">
+                        <div class="textZag1">
+                            С фокусом на практику
+                        </div>
+                        <br><br>
+                        <div class="posle1">
+                            Чтобы вы быстрее развили нужные навыки, у нас есть практические задания для закрепления обученного материала.
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="blocksContainer">
+                   
+                    <div id="bottom" class="prakt">
+                        <div class="arrow" data-index="0"><font size="42px">➡️</font></div>
+                        <div>Введение в php</div>
+                    </div>
+                    <div class="toggle-content" data-index="0">
+                        <p> <h3>1. Синтаксис</h3><br> Код в PHP заключается в открывающий ?php и закрывающий ? теги. Согласно стандарту кодирования PSR-12, закрывающий тег должен быть опущен в файлах, содержащих только код PHP. В конце строки ставят разделитель строк – точку с запятой ;. Если забыть поставить разделитель, то следующая строка кода соединится с предыдущей и интерпретатор PHP выдаст ошибку.
+                            Выведем на экран строку Hello World (заключена в кавычки) с помощью команды echo:
+                            
+                            
+                            <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+                            <code class="language-html" style="text-shadow: none; ">
+    &lt?php
+    echo 'Hello, World.'; // Hello, World.
+            </code></pre> <br>
+            через функцию print:<br>
+            <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+            <code class="language-html" style="text-shadow: none; ">
+    &lt?php
+    print 'Hello, World.'; // Hello, World.                
+</code></pre> <br>
+через функцию printf (выводит отформатированную строку):<br>
+<pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+    <code class="language-html" style="text-shadow: none; ">
+&lt?php
+printf('Hello, World.'); // Hello, World.
+</code></pre><br>
+или через функцию print_r(), выводящую информацию в удобочитаемом виде:<br>
+<pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+    <code class="language-html" style="text-shadow: none; ">
+        &lt?php
+print_r('Hello, World.'); // Hello, World.
+</code></pre><br>
+Чтобы перенести строку используем символ \n, который работает только в двойных кавычках:<br>
+<pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+    <code class="language-html" style="text-shadow: none; ">
+        &lt?php
+        print_r("Hello, World.\nHello, Coder.");
+        
+        /*
+        Hello, World.
+        Hello, Coder.
+        */
+           
+</code></pre>
+
+        <h3>2. Объявление переменной</h3> <br>
+        PHP – язык со слабой типизацией, то есть перед объявлением переменной не нужно задавать ее тип. Чтобы объявить переменную, перед ее именем ставят знак доллара $: <br>
+        <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+            <code class="language-html" style="text-shadow: none; ">
+                $animal = 'Cat';
+        </code></pre><br>
+        Здесь: <br>
+переменной animal присвоили значение Сat. <br>
+Выведем на экран переменную animal: <br>
+
+        <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+            <code class="language-html" style="text-shadow: none; ">
+                &lt?php
+                $animal = 'Cat';
+                echo $animal; // Cat
+                
+        </code></pre><br>
+        Одно значение можно присвоить нескольким переменным: <br>
+        <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+            <code class="language-html" style="text-shadow: none; ">
+                &lt?php
+                $first_animal = $second_animal = $third_animal = 'Cat';
+                
+                echo "$first_animal"; // Cat
+                echo "$second_animal"; // Cat
+                echo "$third_animal"; // Cat
+                
+        </code></pre><br>
+        Комментарии<br>
+Однострочный комментарий начинается с двух слешей // или хеш-символа #, а многострочный заключается в /* */: <br>
+
+        <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+            <code class="language-html" style="text-shadow: none; ">
+                &lt?php
+                // однострочный комментарий
+                
+                # однострочный комментарий
+                
+                /*
+                многострочный 
+                комментарий
+                 */
+                      
+        </code></pre><br><br>
+        <h3>3. Типы данных</h3><br>
+3.1. Строки<br>
+Строка – набор символов, заключенный в одиночные '' или двойные кавычки "": 
+<br>
+        <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+            <code class="language-html" style="text-shadow: none; ">
+                &lt?php
+                $first_animal = 'Cat';
+                $second_animal = "Dog";
+                
+        </code></pre><br>
+        Конкатенация строк<br>
+Оператор конкатенации точка . соединяет левый и правый аргументы: <br>
+
+        <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+            <code class="language-html" style="text-shadow: none; ">
+                &lt?php
+                $first_animal = 'Cat';
+                $second_animal = 'Dog';
+                $animals = $first_animal . $second_animal;
+                echo "$animals"; // CatDog
+        </code></pre><br>
+        Оператор присваивания с конкатенацией .= присоединяет правый аргумент к левому:
+        <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+            <code class="language-html" style="text-shadow: none; ">
+                &lt?php
+                $first_animal = 'Cat';
+                $second_animal = 'Dog';
+                $third_animal = 'Giraffe';
+                $animals = $first_animal;
+                $animals .= $second_animal;
+                $animals .= $third_animal;
+                echo "$animals"; // CatDogGiraffe
+        </code></pre><br>
+        Чтобы перенести слово на новую строку воспользуемся символом переноса \n, который работает только в двойных кавычках: <br>
+        <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+            <code class="language-html" style="text-shadow: none; ">
+                &lt?php
+                $first_animal = "Cat\n";
+                $second_animal = "Dog\n";
+                $third_animal = "Giraffe";
+                $animals = $first_animal;
+                $animals .= $second_animal;
+                $animals .= $third_animal;
+                
+                echo "$animals";
+                
+                
+                /*
+                Cat
+                Dog
+                Giraffe
+                 */
+                
+        </code></pre><br>
+
+        <h3>3.2. Числа</h3> <br>
+        Целое число (integer) не имеет дробной части: <br>
+        <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+            <code class="language-html" style="text-shadow: none; ">
+                &lt?php
+                $number_one = 5678; // целое положительное число
+                $number_two = -5678; // целое отрицательное число
+                
+                
+        </code></pre><br>
+        Число с плавающей точкой <br>
+        Число с плавающей точкой имеет дробную часть и задается следующий образом: <br>
+        <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+            <code class="language-html" style="text-shadow: none; ">
+                &lt?php
+                $number_one = 1.5678; // 1.5678 – положительное число с плавающей точкой
+                $number_two = -1.5678; // -1.5678 – отрицательное число с плавающей точкой
+                $number_three = 1.5678e0; // 1.5678 – положительное число с плавающей точкой
+                $number_four = 1.5678e2; //  156.78 – положительное число с плавающей точкой
+                $number_five = 1.5678E-2; // 0.015678 – положительное число с плавающей точкой
+                
+                
+        </code></pre><br>
+        Чтобы узнать тип переменной воспользуемся функцией gettype(), а для преобразования числа с плавающей точкой в целое число функцией intval():  <br>
+        <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+            <code class="language-html" style="text-shadow: none; ">
+                &lt?php
+                $number_one = 1.5678; // 1.5678 – положительное число с плавающей точкой
+                
+                echo gettype($number_one); // double
+                $number_one = intval($number_one);
+                echo $number_one; // 1
+                echo gettype($number_one); // integer
+                
+                
+        </code></pre><br>
+        
+        </p>
+                    </div>
+                
+                    <div class="prakt">
+                        <div class="arrow" data-index="1"><font size="42px">➡️</font></div>
+                        <div>Конструкция switch..case</div>
+                    </div>
+                    <div class="toggle-content" data-index="1">
+                        <p>Конструкция switch..case является альтернативой использованию конструкции if..elseif..else. Оператор switch получает некоторое выражение и сравнивает его с набором значений: <br><br>
+                            <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+                                <code class="language-html" style="text-shadow: none; ">
+                    switch (выражение){
+                        case значение1: действия; break;
+                        case значение2: действия; break;
+                        //...........................
+                        case значениеN: действия; break;
+                                }
+                                    
+                            </code></pre><br>
+                            После ключевого слова switch в скобках идет сравниваемое выражение. Значение этого выражения последовательно сравнивается со значениями, помещенными после операторов сase. И если совпадение будет найдено, то будет выполняться определенный блок сase. <br><br>
+                            Конструкция switch может содержать произвольное количество операторов case. В конце блока сase ставится оператор break, чтобы избежать выполнения других блоков. <br><br>
+                            Весь блок switch помещается в фигурные скобки, однако блок каждого отдельного оператора case НЕ помещается в фигурные скобки. <br><br>
+                            Например, возьмем следующую конструкцию if..elseif..else: <br>
+                            
+                            <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+                                <code class="language-html" style="text-shadow: none; ">
+                    $a = 3;
+                    if($a==1)     echo "сложение";
+                    elseif($a==2) echo "вычитание";
+                    elseif($a==3) echo "умножение";
+                    elseif($a==4) echo "деление";
+                                    
+                            </code></pre><br> <br>
+                            Теперь перепишем ее с помощь конструкции switch..case: <br>
+                            <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+                                <code class="language-html" style="text-shadow: none; ">
+                    $a = 3;
+                    switch($a)
+                    {
+                    case 1: 
+                    echo "сложение";
+                    break;
+                    case 2: 
+                    echo "вычитание";
+                    break;
+                    case 3: 
+                    echo "умножение";
+                    break;
+                    case 4: 
+                    echo "деление";
+                    break;
+                    }
+                                    
+                            </code></pre><br><br>
+                            То есть на вход в конструкцию switch передается переменная $a<, и ее значение последовательно сравнивается со значениями, указанными после операторов case. Так, в данном случае переменная $a равна 3, поэтому выполнение дойдет до блока
+                            <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+                                <code class="language-html" style="text-shadow: none; ">
+                    case 3: 
+                    echo "умножение";
+                    break;
+                                
+                            </code></pre><br><br>
+                            и этот блок и будет выполняться. <br><br>
+                            Если мы хотим также обработать ситуацию, когда совпадения не будет найдено, то можно добавить блок default: <br><br>
+                            
+                            <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+                                <code class="language-html" style="text-shadow: none; ">
+                    $a = 3;
+                    switch($a)
+                    {
+                    case 1: 
+                            echo "сложение";
+                            break;
+                    case 2: 
+                            echo "вычитание";
+                            break;
+                    default: 
+                            echo "действие по умолчанию";
+                            break;
+                    }
+                                    
+                            </code></pre><br> <br>
+                            Конструкция switch..case также поддерживает альтернативный синтаксис, при котором вместо открывающей блок фигурной скобки ставится двоеточие, а вместо закрывающей фигурной скобки - ключевое слово endswitch: <br><br>
+                            <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+                                <code class="language-html" style="text-shadow: none; ">
+                    $a = 3;
+                    switch($a):
+                    case 1: 
+                        echo "сложение";
+                        break;
+                    case 2: 
+                        echo "вычитание";
+                        break;
+                    default: 
+                    echo "действие по умолчанию";
+                    break;
+                    endswitch
+                                    
+                            </code></pre><br>
+                            <h3>Функции</h3><br>
+                            Функции представляют собой блок инструкций, которые многократно можно вызывать в различных частях программы. Функции позволяют разделять программуу на меньшие функциональные части. <br><br>
+                            Общий синтаксис определения функции выглядит следующим образом: <br>
+                            
+                            <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+                                <code class="language-html" style="text-shadow: none; ">
+                    function имя_функции([параметр [, ...]])
+                    {
+                    // Инструкции
+                    }
+                                    
+                            </code></pre><br>
+                            <br>
+                            Определение функции начинается с ключевого слова function, за которым следует имя функции. Имя функции должно начинаться с алфавитного символа или подчеркивания, за которыми может следовать любое количество алфавитно-цифровых символов или символов подчеркивания. <br><br>
+После имени функции в скобках идет перечисление параметров. Даже если параметров у функции нет, то просто идут пустые скобки. Затем в фигурных скобках идет тело функции, содержащее набор инструкций.<br><br>
+Определим простейшую функцию:<br>
+
+
+                            <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+                                <code class="language-html" style="text-shadow: none; ">
+
+                            </code></pre><br>
+                            Данная функция назывется hello. Она не имеет параметров, поэтому после названия функции идут пустые скобки. Блок функции содержит только одну инструкцию, которая выводит сообщение "Hello PHP". <br><br>
+                            Чтобы функция сработала, ее надо вызвать. Для вызова функции указывается ее имя, после которого в скобках идут значения для ее параметров (если, кончено, она имеет параметры): <br><br>
+                            <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+                                <code class="language-html" style="text-shadow: none; ">
+&lt?php
+function hello()
+{
+    echo "Hello PHP";
+}
+
+                            </code></pre><br>
+                            Поскольку для функции hello мы не определили никаких параметров, то при ее вызове указываем название функции и после нее пустые круглые скобки. Заканчивается вызов функции точкой с запятой. <br><br>
+                            В итоге браузер выведет сообщение: <br> Hello PHP <br>
+                            Преимуществом функций является то, что, определив однажды, мы можем многократно их вызывать в различных частях программы: <br><br>
+                            <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+                                <code class="language-html" style="text-shadow: none; ">
+
+&lt?php
+function hello()
+{
+    echo "<h2>Hello PHP</h2>";
+}
+hello();
+hello();
+hello();
+?>
+hello();    // вызов функции
+?>
+
+</body>
+</html>
+
+                            </code></pre><br>
+                            Стоит отметить, что в данном случае сначала определяется функция, а затем она вызывается. Но мы также можно сделать наоборот: <br><br>
+                            <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+                                <code class="language-html" style="text-shadow: none; ">
+&lt?php
+hello();    // вызов функции
+ 
+function hello()
+{
+    echo "Hello PHP";
+}
+?>
+
+                            </code></pre><br>
+                            Тем не менее есть исключения. В частности, при определении функции при определенном условии. <br>
+                            <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+                                <code class="language-html" style="text-shadow: none; ">
+// hello();     // здесь будет ошибка
+ 
+if(true){   
+    function hello()
+    {
+        echo "Hello PHP";
+    }
+ 
+    hello();
+}
+
+                            </code></pre><br>
+                            Аргументов в функции может и не быть — тогда она называется подпрограммой. <br><br>
+                            То есть объявление функции выглядит примерно так: <br>
+                            
+                            <pre class="code" style="background-color: rgb(250, 250, 250); width:80%; border-radius: 10px">
+                                <code class="language-html" style="text-shadow: none; ">
+&lt?php
+function <имя функции>(<аргумент функции>) {
+    <тело функции>
+    return <результат выполнения функции>;
+}
+
+                            </code></pre><br>
+                            Давайте напишем настоящую функцию, которая по номеру года вычисляет, високосный ли он. Так будет проще понять, как устроены функции.
+                            <img src="photo_2024-10-29_00-25-22.jpg" alt="">
+                            <br><br>
+                            Что нужно запомнить: <br>
+
+
+
+                            <ul>
+                                <li>Функция — это кусочек кода, которому дали имя.</li>
+                                <li>Функции нужны, чтобы не переписывать один и тот же код много раз.</li>
+                                <li>В функцию можно передать много переменных, но вернуть только что-то одно.</li>
+                                <li>Переменные внутри функции недоступны снаружи, внешние переменные нужно передавать через аргументы.</li>
+                            </ul>
+                        </p>
+                    </div>
+
+
+
+                </div>
+            <!-- <video width="232" height="131" autoplay="" loop="" poster="https://cdn.skillbox.pro/landgen/blocks/mentor/134590/xl/beaef63b-8944-4b38-a6f4-9460115c377e.jpg" muted="" playsinline="" controlslist="nodownload" data-src-mp4="https://cdn.skillbox.pro/landgen/blocks/mentor/134593/43a5f6ef-f59c-4183-a4fe-a5f6cbcccf0d.mp4" data-src-webm="https://cdn.skillbox.pro/landgen/blocks/mentor/134593/43a5f6ef-f59c-4183-a4fe-a5f6cbcccf0d.mp4" class="mentor-v2__media mentor-v2__media--video"><source src="https://cdn.skillbox.pro/landgen/blocks/mentor/134594/e899d9cd-f20a-4aa4-9bbd-e773c47016ec.mp4" type="video/webm"><source src="https://cdn.skillbox.pro/landgen/blocks/mentor/134594/e899d9cd-f20a-4aa4-9bbd-e773c47016ec.mp4" type="video/mp4"></video> -->
+            </div>
+
+
+ 
+
+
+            <script>
+                const arrows = document.querySelectorAll('.arrow');
+    const toggleContents = document.querySelectorAll('.toggle-content');
+
+    arrows.forEach(arrow => {
+        arrow.addEventListener('click', () => {
+            const index = arrow.getAttribute('data-index');
+            const currentContent = document.querySelector(`.toggle-content[data-index="${index}"]`);
+            const isOpen = currentContent.classList.toggle('open');
+            arrow.classList.toggle('open');
+
+            // Закрываем все остальные блоки
+            if (isOpen) {
+                toggleContents.forEach(content => {
+                    if (content !== currentContent) {
+                        content.classList.remove('open');
+                        content.style.maxHeight = '0';
+                        // Убираем обивку
+                        content.style.padding = '0 10px'; 
+                        const correspondingArrow = document.querySelector(`.arrow[data-index="${content.getAttribute('data-index')}"]`);
+                        correspondingArrow.classList.remove('open');
+                    }
+                });
+                // Устанавливаем max-height для текущего блока
+                currentContent.style.maxHeight = currentContent.scrollHeight + 'px';
+            } else {
+                currentContent.style.maxHeight = '0';
+                // Убираем обивку
+                currentContent.style.padding = '0 10px'; 
+            }
+        });
+    });
+            </script>
+            
+
+
+
+</body>
+</html>

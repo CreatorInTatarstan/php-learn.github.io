@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tenor+Sans&display=swap');
+
+
+body{
+
+    overflow-x: hidden;
+    font-family: "Finlandica", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.cap{ 
+    width: 101%;
+    height: 60px;
+    background-color: #0882ff;
+    margin-left: -10px;
+    margin-top: -10px;
+    box-shadow: 0 -15px 30px 10px rgba(0, 0, 0, .5);    
+    /* border-bottom: 3px solid rgba(0, 0, 0, 0.118); - так пизже но марков хуйло  */
+
+
+}
+
+
+.logo{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    font-weight: bold;
+    margin-left:8.5% ;
+
+    font-family: "Finlandica", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+
+
+.content{
+    padding-top: 25px;
+    width: 70%;
+    height: 35px;
+    margin-left: 15%;
+    margin-top: -15px;
+    text-align: center;
+
+
+}
+
+.mainBtn{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+    margin-right: 25px;
+    color: white;
+    transition-duration: 0.4s;
+    font-size: 14px;
+    font-weight: bold;
+
+}    
+
+.mainBtn:hover{
+    color: rgb(232, 73, 33);
+    opacity: 0.4s;
+}
+
+.mainBtn1{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 25px;
+
+
+    color: White;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.blockInMark{
+    height: 450px;
+    width: 70%;
+    margin: auto;
+    margin-top: 80px;
+    background-image: url(https://avatars.mds.yandex.net/get-practicum/5473806/2a0000017e95c6e85a4cee06759f78b7e028/optimize);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+
+}
+
+.course{
+    color: white;
+    font-size: 44px;
+    width: 600px;
+    position: relative;
+    left: -110px;
+}
+
+.progr{
+    background: rgba(205, 214, 219, 0);
+    margin-left: 40%;
+    position: relative;
+    top: 25px;
+    width: 250px;
+    height: 30px;
+    border-radius: 24px;
+    border: medium solid white ;
+    padding-left: 20px ;
+}
+
+.progrText{
+    color: white;
+    font-size: 18px;
+
+}
+
+.btnForProgr{
+    width: 300px;
+    height: 60px;
+    background-color: white;
+    border-radius: 14px;
+    transition-duration: 0.6s;
+    position: relative;
+    left: -40px;
+
+}
+
+.textForBTN{
+    font-size: 22px;
+    margin-left: 20px;
+    position: relative;
+    top: 15px;
+}
+
+.blockKach{
+    width: 70%;
+    height: 60px;
+    display: flex;
+    background-color: white;
+    border-radius: 14px;
+    margin-left: 15%;
+    box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.2);
+}
+.kachFlex{
+    width: 30%;
+    margin-left: 3%;
+    display: flex;
+}
+
+.kachIMG{
+    width: 60px;
+    height: 60px;
+}
+
+.kachText{
+    position: relative;
+    top: 10px;
+}
+
+
+.btnForProgr:hover{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+
+
+.nach{
+    width: 70%;
+    margin-left: 15%;
+    border-bottom: 1px solid #8694a4;
+    color: #8694a4;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.block{
+    width: 1350px;
+    height: 1000px;
+    margin: 0  auto;
+}
+
+.fullContent{
+    display: flex;
+
+}
+.fullContent2{
+    display: flex;
+    margin-left: 150px;
+
+}
+
+
+.contentForBlock1{
+    margin-top: 60px;
+    width: 260px;
+    height: 360px;
+    border: 1px solid #8694a4   ;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 17%;
+}
+
+.contentForBlock{
+    margin-top: 60px;
+    width: 260px;
+    height: 360px;
+    border: 1px solid #8694a4;
+    border-radius: 5px;
+    margin-left: 30px;
+
+}
+
+
+.forImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(50, 155, 224);
+    position: relative;
+    top: -50px;
+    left: 80px;
+}
+
+.img1{
+    margin-top: 20%;
+    margin-left:25%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(50, 155, 224);
+}
+
+
+.nazv{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    left: 103px;
+    margin: 0 auto;
+    font-size: 24px;
+    color: #50A2DE;
+    transition-duration: 0.4s;
+    
+}
+.nazv:hover{
+    color: rgb(232, 73, 33);
+}
+
+.nazv1{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    left: 48px;
+    margin: 0 auto;
+    font-size: 24px;
+    color: #50A2DE;
+    transition-duration: 0.4s;
+    
+}
+.nazv1:hover{
+    color: rgb(232, 73, 33);
+}
+
+.nazv2{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    left: 108px;
+    margin: 0 auto;
+    font-size: 26px;
+    color: #50A2DE;
+    transition-duration: 0.4s;
+    
+}
+.nazv2:hover{
+    color: rgb(232, 73, 33);
+}
+
+.nazv3{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    left: 75px;
+    margin: 0 auto;
+    font-size: 26px;
+    color: #50A2DE;
+    transition-duration: 0.4s;
+    
+}
+.nazv3:hover{
+    color: rgb(232, 73, 33);
+}
+
+
+
+.nazv4{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    left: 55px;
+    margin: 0 auto;
+    margin-left: 50px;
+    font-size: 26px;
+    color: #50A2DE;
+    transition-duration: 0.4s;
+}
+.nazv4:hover{
+    color: rgb(232, 73, 33);
+}
+
+
+.pol{
+position: relative;
+left: 100px;
+}
+
+.info{
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    color: #8694a4 ;
+}
+
