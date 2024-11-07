@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tenor+Sans&display=swap');
+body {
+  background-color: black;
+
+  color: Ivory;
+  font-family: "Finlandica", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+.osnova{
+   background-image: url(/main_bg.webp);
+}
+
+
+
+
+.content{
+    padding-top: 25px;
+    width: 70%;
+    height: 35px;
+    margin-left: 15%;
+    margin-top: -15px;
+    text-align: center;
+
+}
+.cap{ 
+    width: 101%;
+    height: 60px;
+    background-color: black;
+    margin-left: -10px;
+    margin-top: -10px;
+    box-shadow: 0 -15px 30px 10px rgba(0, 0, 0, .5);    
+    /* border-bottom: 3px solid rgba(0, 0, 0, 0.118); - так пизже но марков хуйло  */
+
+}
+.mainBtn{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+    margin-right: 25px;
+    color: #8694a4;
+    transition-duration: 0.4s;
+    font-size: 14px;
+
+}    
+
+.mainBtn:hover{
+    color: rgb(232, 73, 33);
+    opacity: 0.4s;
+}
+
+.mainBtn1{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 25px;
+    color: #8694a4;
+    color: #8694a4;
+    font-size: 14px;
+    transition-duration: 0.4s;
+}
+.mainBtn1:hover {
+   color: rgb(232, 73, 33);
+    opacity: 0.4s;
+}
+
+.logo{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 8px;
+    left: 30px;
+    font-weight: bold;
+    margin-left:8.5% ;
+    font-family: "Finlandica", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.nach{
+    width: 80%;
+    margin-left: 10%;
+    border-bottom: 1px solid #8694a4;
+    color: #8694a4;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+.cont {
+    width: 60%;
+    height: 600px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin: 0 auto; 
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1%;
+}
+
+.map {
+    margin-top: 30px;
+    width: 100%;
+    height: 463px;
+    
+}
+.cont2 {
+    width: 70%;
+    height: 150px;
+    border-radius: 30px;
+    margin-top: 500px;
+    margin: 0 auto; 
+    border-radius: 10px;
+    background-color: white;
+    
+}
+.cont3 {
+    display: flex;  
+    line-height: 0.001;
+    letter-spacing: 2px;
+    color: #696969;
+}
+.cont3 h4 {
+    color: black;
+}
+.place2 {
+    width: 15%;
+display: flex;
+  flex-wrap: wrap;
+    display: flex;
+    padding: 3% 0 0 5%;
+
+}
+.phone_number {
+    width: 20%;
+display: flex;
+  flex-wrap: wrap;
+    display: flex;
+    padding: 3% 0 0 5%;
+}
+.work {
+    width: 20%;
+display: flex;
+  flex-wrap: wrap;
+    display: flex;
+    padding: 3% 0 0 5%;
+}
+.email {
+    width: 25%;
+display: flex;
+  flex-wrap: wrap;
+    display: flex;
+    padding: 3% 0 0 5%;
+}
+.cont2 img {
+    height:30px;
+    width: 30px;
+    margin-right: 20px;
+    opacity: 0.6;
+    position: ;
+    margin: -5px 15px 0 0 ;
+}
+.place2 img {
+    
+}
+.cont2 h3 {
+    color: #1e8988;
+    margin: 35px 0 0 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  margin: 0 auto;
+  height: 200px;
+  margin-top: 8%;
+}
+.futer_logo {
+  display: flex;
+}
+
+.logo1{
+    font-size: 30px;
+    font-weight: bold;
+
+    margin-left:0 auto;
+    text-align: center; 
+    width: 15%;
+    height: 50px;
+}
+
+.cherta {
+  width: 35%;
+  height: 1px;
+  background-color: white;
+  margin-top: 20px;
+}
+.footer2 {
+  height: 200px;
+}
+.data {
+  width: 30%;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+.data p {
+  font-size: 11px;
+  color: white;
+
+}
+.our_place {
+  margin: 0 auto;
+  width: 250px;
+  text-align: center;
+}
+.test {
+  text-indent: 0px;
+}
